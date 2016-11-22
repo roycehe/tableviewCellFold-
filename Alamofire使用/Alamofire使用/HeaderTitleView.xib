@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VT4-hw-IIy" customClass="HeaderTitleView" customModule="Alamofire使用" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6z6-9L-BZd">
+                    <rect key="frame" x="15" y="13" width="33" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqk-16-20Q">
+                    <rect key="frame" x="333" y="11.5" width="22" height="22"/>
+                    <state key="normal" image="icon_down"/>
+                    <state key="selected" image="icon_up"/>
+                    <connections>
+                        <action selector="spreadBtnClick:" destination="VT4-hw-IIy" eventType="touchUpInside" id="3Nv-dg-zmW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Eqk-16-20Q" secondAttribute="trailing" constant="20" id="46x-sv-FWK"/>
+                <constraint firstItem="Eqk-16-20Q" firstAttribute="centerY" secondItem="6z6-9L-BZd" secondAttribute="centerY" id="4eO-ZH-sJv"/>
+                <constraint firstItem="6z6-9L-BZd" firstAttribute="leading" secondItem="VT4-hw-IIy" secondAttribute="leading" constant="15" id="AOc-H4-rSM"/>
+                <constraint firstItem="6z6-9L-BZd" firstAttribute="centerY" secondItem="VT4-hw-IIy" secondAttribute="centerY" id="RHK-WS-snq"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="spreadBtn" destination="Eqk-16-20Q" id="zzn-oY-7PG"/>
+                <outlet property="titleLabel" destination="6z6-9L-BZd" id="Xjv-JR-bFA"/>
+            </connections>
+            <point key="canvasLocation" x="-408" y="211"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_down" width="22" height="22"/>
+        <image name="icon_up" width="22" height="22"/>
+    </resources>
+</document>
